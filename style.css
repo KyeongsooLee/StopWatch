@@ -1,69 +1,55 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #121212;
-  color: #fff;
-  text-align: center;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.stopwatch {
-  background-color: #212121;
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-.time {
-  font-size: 4rem;
-  margin-bottom: 20px;
-}
-
-.controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-button {
-  font-size: 1.5rem;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-button.start {
-  background-color: #5cb85c;
-  color: #fff;
-}
-
-button.stop {
-  background-color: #d9534f;
-  color: #fff;
-}
-
-button.reset {
-  background-color: #f0ad4e;
-  color: #fff;
-}
-
-button:hover {
-  transform: scale(1.05);
-}
-This CSS file has updated font sizes, padding, and background colors to make the app more mobile-friendly. Let me know if you have any other questions or if you need further assistance!
-
-
-
-
-
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .stopwatch {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  .time {
+    font-size: 100px;
+    margin-bottom: 50px;
+  }
+  
+  .controls button {
+    font-size: 50px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: #1e90ff;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .controls button:hover {
+    background-color: #187bcd;
+  }
+  
+  .controls .start {
+    background-color: #28a745;
+  }
+  
+  .controls .start:hover {
+    background-color: #218838;
+  }
